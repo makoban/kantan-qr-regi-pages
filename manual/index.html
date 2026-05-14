@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>簡単QRレジ 使い方マニュアル</title>
+  <meta name="description" content="簡単QRレジの初心者向けマニュアル。商品登録、QR作成、会計、レシート、履歴出力まで画面つきで説明します。">
+  <style>
+    :root {
+      --ink: #17212b;
+      --muted: #52616b;
+      --line: #d9e3df;
+      --paper: #ffffff;
+      --base: #f7fbfa;
+      --green: #0f6f65;
+      --coral: #ef6b5b;
+      --yellow: #ffcf5a;
+      --blue: #3f77bf;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "YuGothic", "Noto Sans JP", sans-serif;
+      color: var(--ink);
+      background: var(--base);
+      line-height: 1.8;
+      letter-spacing: 0;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: var(--green); font-weight: 800; }
+    .wrap { width: min(1040px, calc(100% - 28px)); margin: 0 auto; }
+    header {
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 3;
+    }
+    .nav {
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+    .brand { font-size: 19px; font-weight: 900; line-height: 1.25; }
+    .nav a { text-decoration: none; }
+    .hero { padding: 42px 0 28px; }
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(34px, 6vw, 58px);
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+    .hero p { max-width: 760px; color: var(--muted); font-size: 19px; font-weight: 700; }
+    .steps {
+      display: grid;
+      gap: 22px;
+      padding: 18px 0 56px;
+    }
+    .step {
+      display: grid;
+      grid-template-columns: minmax(220px, 310px) minmax(0, 1fr);
+      gap: 24px;
+      align-items: start;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 20px;
+      box-shadow: 0 12px 34px rgba(25, 38, 45, 0.08);
+    }
+    .shot {
+      border-radius: 26px;
+      overflow: hidden;
+      border: 1px solid #cddad6;
+      background: #fff;
+    }
+    .body { padding: 4px 0; }
+    .num {
+      display: inline-grid;
+      place-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--yellow);
+      color: #332400;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+    h2 { margin: 0 0 8px; font-size: clamp(25px, 4vw, 36px); letter-spacing: 0; line-height: 1.25; }
+    p { margin: 0 0 14px; color: var(--muted); font-weight: 700; }
+    ul { margin: 0; padding-left: 1.2em; color: var(--muted); font-weight: 700; }
+    li + li { margin-top: 6px; }
+    .tip {
+      margin-top: 18px;
+      border-left: 7px solid var(--green);
+      background: #eef8f5;
+      border-radius: 14px;
+      padding: 14px 16px;
+      color: var(--ink);
+      font-weight: 800;
+    }
+    .warning { border-left-color: var(--coral); background: #fff5f2; }
+    footer { border-top: 1px solid var(--line); padding: 28px 0 42px; color: var(--muted); font-weight: 700; }
+    @media (max-width: 780px) {
+      .wrap { width: min(100% - 20px, 620px); }
+      .nav { min-height: 58px; }
+      .brand { font-size: 18px; }
+      .step { grid-template-columns: 1fr; padding: 14px; border-radius: 18px; }
+      .shot { width: min(100%, 340px); margin: 0 auto; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">簡単QRレジ</div>
+      <a href="../">LPへ戻る</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>はじめてでも迷わない、画面つき使い方</h1>
+      <p>商品を登録してQRを作り、レジ画面で読み取り、会計後にレシートや履歴を残すまでを順番に説明します。</p>
+    </section>
+
+    <section class="steps">
+      <article class="step">
+        <div class="shot"><img src="assets/01-register-home.jpg" alt="レジ画面"></div>
+        <div class="body">
+          <span class="num">1</span>
+          <h2>レジ画面を開く</h2>
+          <p>アプリを開くと、すぐにQRを読み取る画面になります。商品QRを読み取ると、自動でカートに入ります。</p>
+          <ul>
+            <li>同じQRをもう一度読むと、同じ商品の個数が増えます。</li>
+            <li>カート内の商品をタップすると、数量を増減できます。</li>
+            <li>カートが空の時は、会計ボタンは出ません。</li>
+          </ul>
+          <div class="tip">会計や設定を開いている間は、カメラにQRが映っても読み取りません。</div>
+        </div>
+      </article>
+
+      <article class="step">
+        <div class="shot"><img src="assets/02-settings-tax-theme.jpg" alt="設定画面"></div>
+        <div class="body">
+          <span class="num">2</span>
+          <h2>店舗名・税率・テーマを決める</h2>
+          <p>設定では、レジ画面に出す店舗名、税率、見た目のテーマを変更できます。</p>
+          <ul>
+            <li>店舗名はレジ画面の見出しに表示されます。</li>
+            <li>税率は「デフォルト税率」と「カスタム税率」を決められます。</li>
+            <li>商品ごとの税率は、商品登録時に「デフォルト」「カスタム」「非課税」から選びます。</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="step">
+        <div class="shot"><img src="assets/03-product-list.jpg" alt="商品管理画面"></div>
+        <div class="body">
+          <span class="num">3</span>
+          <h2>商品管理を開く</h2>
+          <p>商品の追加、QR確認、棚ラベル印刷、商品編集、商品削除は「商品管理」から行います。</p>
+          <div class="tip">レジ中に迷わないよう、商品に関する操作は設定側にまとめています。</div>
+        </div>
+      </article>
+
+      <article class="step">
+        <div class="shot"><img src="assets/04-product-editor.jpg" alt="商品登録画面"></div>
+        <div class="body">
+          <span class="num">4</span>
+          <h2>商品を登録する</h2>
+          <p>商品名、税抜価格、税率を入力して保存します。税込価格は画面内で確認できます。</p>
+          <ul>
+            <li>通常の商品は「デフォルト」を選びます。</li>
+            <li>別税率の商品は「カスタム」を選びます。</li>
+            <li>税金をかけない商品は「非課税」を選びます。</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="step">
+        <div class="shot"><img src="assets/05-product-qr.jpg" alt="QR確認画面"></div>
+        <div class="body">
+          <span class="num">5</span>
+          <h2>商品QRを確認する</h2>
+          <p>登録した商品には専用QRが作られます。このQRをレジ画面で読むと、同じ商品としてカートに入ります。</p>
+          <div class="tip">別端末でも同じQRを使うには、商品データを書き出して相手の端末で読み込んでください。</div>
+        </div>
+      </article>
+
+      <article class="step">
+        <div class="shot"><img src="assets/06-product-print.jpg" alt="QR印刷画面"></div>
+        <div class="body">
+          <span class="num">6</span>
+          <h2>棚ラベルを印刷する</h2>
+          <p>QRだけ、QRと商品内容、棚に置きやすい形など、用途に合わせたレイアウトを選べます。</p>
+          <ul>
+            <li>商品名と税込価格入りのラベルを作れます。</li>
+            <li>PDFとして保存して、あとから印刷することもできます。</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="step">
+        <div class="shot"><img src="assets/07-settings-data-history.jpg" alt="設定のデータ移行と会計履歴"></div>
+        <div class="body">
+          <span class="num">7</span>
+          <h2>商品データを別端末へ移す</h2>
+          <p>設定の「データ移行」から、商品データを書き出し・読み込みできます。</p>
+          <ul>
+            <li>書き出したファイルを別端末で読み込むと、同じQRを同じ商品として使えます。</li>
+            <li>複数端末で同時に売上を共有する機能は、今後の追加候補です。</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="step">
+        <div class="shot"><img src="assets/08-sale-history.jpg" alt="会計履歴画面"></div>
+        <div class="body">
+          <span class="num">8</span>
+          <h2>会計履歴を見る</h2>
+          <p>会計が終わると、会計履歴に明細が残ります。あとからレシート確認、編集、削除ができます。</p>
+          <ul>
+            <li>CSVを書き出すと、表計算アプリで集計できます。</li>
+            <li>PDFを書き出すと、履歴をファイルとして保管できます。</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="step">
+        <div class="shot"><img src="assets/09-receipt.jpg" alt="レシート画面"></div>
+        <div class="body">
+          <span class="num">9</span>
+          <h2>レシートを確認する</h2>
+          <p>会計確定後は、明細・税金・合計をレシート形式で確認できます。印刷やPDF保存にも使えます。</p>
+          <div class="tip">お客様への控えが必要な時は、この画面から印刷します。</div>
+        </div>
+      </article>
+
+      <article class="step">
+        <div class="shot"><img src="assets/10-sale-csv-export.jpg" alt="CSV保存画面"></div>
+        <div class="body">
+          <span class="num">10</span>
+          <h2>CSVを保存する</h2>
+          <p>会計履歴のCSVは、iPhone内やクラウドフォルダへ保存できます。日本語が文字化けしにくい形式で書き出します。</p>
+          <div class="tip warning">保存先のアプリによって表示が違う場合があります。表計算アプリで開く時は、UTF-8対応の読み込みを選ぶと安心です。</div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© BANTEX / 簡単QRレジ</div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kantan-qr-regi.bantex.jp/sitemap.xml

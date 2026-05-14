@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">明細を印刷・保存するイメージ</title>
+  <desc id="desc">会計後のレシート、PDF、CSVを保存できることを表す場面。</desc>
+  <rect width="960" height="640" rx="40" fill="#f4f7ff"/>
+  <rect x="116" y="78" width="292" height="484" rx="34" fill="#ffffff" stroke="#d5ddec" stroke-width="4"/>
+  <path d="M156 142h212M156 198h176M156 254h212M156 310h156M156 366h212M156 422h176" stroke="#d8e0ed" stroke-width="16" stroke-linecap="round"/>
+  <text x="262" y="116" text-anchor="middle" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="30" font-weight="700" fill="#1b2b34">レシート</text>
+  <text x="262" y="500" text-anchor="middle" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="40" font-weight="700" fill="#0f6f65">合計 1,100円</text>
+  <g font-family="Hiragino Sans, Yu Gothic, sans-serif" font-weight="700">
+    <rect x="496" y="112" width="292" height="92" rx="26" fill="#ffffff" stroke="#d5ddec" stroke-width="4"/>
+    <circle cx="552" cy="158" r="28" fill="#ffcf5a"/>
+    <text x="552" y="168" text-anchor="middle" font-size="28" fill="#332400">印</text>
+    <text x="650" y="168" text-anchor="middle" font-size="28" fill="#1b2b34">印刷</text>
+    <rect x="496" y="258" width="292" height="92" rx="26" fill="#ffffff" stroke="#d5ddec" stroke-width="4"/>
+    <circle cx="552" cy="304" r="28" fill="#ef6b5b"/>
+    <text x="552" y="314" text-anchor="middle" font-size="24" fill="#ffffff">PDF</text>
+    <text x="652" y="314" text-anchor="middle" font-size="28" fill="#1b2b34">ファイル保存</text>
+    <rect x="496" y="404" width="292" height="92" rx="26" fill="#ffffff" stroke="#d5ddec" stroke-width="4"/>
+    <circle cx="552" cy="450" r="28" fill="#2d9b8d"/>
+    <text x="552" y="460" text-anchor="middle" font-size="24" fill="#ffffff">CSV</text>
+    <text x="650" y="460" text-anchor="middle" font-size="28" fill="#1b2b34">集計用</text>
+  </g>
+</svg>
