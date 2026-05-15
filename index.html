@@ -102,7 +102,7 @@
     }
     .hero {
       position: relative;
-      min-height: 640px;
+      min-height: 600px;
       display: grid;
       align-items: start;
       isolation: isolate;
@@ -116,8 +116,8 @@
       background-image:
         linear-gradient(90deg, rgba(8, 19, 24, 0.9) 0%, rgba(8, 19, 24, 0.78) 36%, rgba(8, 19, 24, 0.42) 58%, rgba(8, 19, 24, 0.08) 82%, rgba(8, 19, 24, 0) 100%),
         url("assets/generated/hero-simple-payment-register.jpg");
-      background-position: center, right center;
-      background-size: cover, contain;
+      background-position: center, center center;
+      background-size: cover, cover;
       background-repeat: no-repeat;
       z-index: -2;
     }
@@ -131,7 +131,7 @@
     }
     .hero-copy {
       width: min(720px, 100%);
-      padding: 68px 0 96px;
+      padding: 44px 0 86px;
       color: #fff;
     }
     .eyebrow {
@@ -251,8 +251,8 @@
     .status-strip {
       position: relative;
       z-index: 2;
-      transform: translateY(-110px);
-      margin-bottom: -72px;
+      transform: translateY(-58px);
+      margin-bottom: -36px;
     }
     .status-grid {
       display: grid;
@@ -284,6 +284,9 @@
     section {
       padding: 64px 0;
       scroll-margin-top: 88px;
+    }
+    section.hero {
+      padding: 0;
     }
     .section-head {
       display: grid;
@@ -621,7 +624,7 @@
         grid-template-columns: 1fr;
       }
       h1 { font-size: 48px; }
-      .hero-copy { padding: 54px 0 78px; }
+      .hero-copy { padding: 42px 0 72px; }
       .scene-image,
       .scene-figure {
         min-height: 340px;
@@ -636,7 +639,7 @@
           linear-gradient(180deg, rgba(8, 19, 24, 0.78) 0%, rgba(8, 19, 24, 0.54) 55%, rgba(8, 19, 24, 0.18) 100%),
           url("assets/generated/hero-simple-payment-register.jpg") 58% center / cover no-repeat;
       }
-      .hero-copy { padding: 54px 0 92px; }
+      .hero-copy { padding: 42px 0 78px; }
       .hero-lead { font-size: 18px; }
       .status-grid {
         grid-template-columns: 1fr;
@@ -677,7 +680,7 @@
       .nav { min-height: 60px; }
       .brand { font-size: 17px; }
       .brand img { width: 38px; height: 38px; }
-      .hero-copy { padding: 38px 0 42px; }
+      .hero-copy { padding: 30px 0 40px; }
       h1 { font-size: 36px; }
       .hero-lead { font-size: 17px; }
       .hero-points {
