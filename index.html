@@ -457,6 +457,27 @@
       font-size: 14px;
       font-weight: 900;
     }
+    .campaign-pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 26px;
+      margin-left: 8px;
+      padding: 0 9px;
+      border-radius: 999px;
+      background: var(--yellow);
+      color: var(--ink);
+      font-size: 12px;
+      font-weight: 900;
+      vertical-align: middle;
+    }
+    .regular-price {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 900;
+      text-decoration: line-through;
+      text-decoration-thickness: 2px;
+    }
     .price {
       margin-top: 8px;
       font-size: 38px;
@@ -727,7 +748,7 @@
         "@type": "Offer",
         "price": "300",
         "priceCurrency": "JPY",
-        "description": "Pro買い切りで制限なし"
+        "description": "通常1,980円をデビューキャンペーンで300円。Pro買い切りで制限なし"
       }
     ],
     "publisher": {
@@ -905,8 +926,8 @@
       <div class="wrap price-layout">
         <div>
           <p class="section-label">PRICE</p>
-          <h2 id="pricing-title">無料で試して、必要なら300円だけ。</h2>
-          <p>サーバーも外部APIも使わないため、継続的な運用コストをかけずに低価格で提供する方針です。小さなお店が試しやすいよう、無料版にも基本機能を入れています。</p>
+          <h2 id="pricing-title">今だけ、通常1,980円をデビューキャンペーンで300円。</h2>
+          <p>Pro買い切りは通常1,980円のところ、公開記念のデビューキャンペーンとして300円で提供予定です。サーバーも外部APIも使わないため、継続的な運用コストをかけずに低価格で届けます。</p>
           <div class="plan-grid">
             <article class="plan">
               <div class="plan-name">無料版</div>
@@ -918,8 +939,9 @@
               </ul>
             </article>
             <article class="plan pro">
-              <div class="plan-name">Pro買い切り</div>
-              <div class="price">300円 <small>制限なし</small></div>
+              <div class="plan-name">Pro買い切り <span class="campaign-pill">デビューキャンペーン</span></div>
+              <div class="regular-price">通常1,980円</div>
+              <div class="price">300円 <small>今だけ・制限なし</small></div>
               <ul>
                 <li>商品登録数の制限なし</li>
                 <li>会計履歴の制限なし</li>
@@ -927,7 +949,7 @@
               </ul>
             </article>
           </div>
-          <p class="plan-note">App Store公開前のため、表示価格は申請時の価格ポイントに合わせて最終確認します。</p>
+          <p class="plan-note">App Store公開前のため、表示価格は申請時の価格ポイントに合わせて最終確認します。キャンペーン終了後は通常1,980円を予定しています。</p>
         </div>
         <figure class="lettering">
           <img src="assets/generated/lettering-pro-300.jpg" alt="スマホだけでQRレジ。Pro 300円買い切り">
@@ -1061,7 +1083,7 @@
           </article>
           <article class="faq">
             <h3>Proは月額ですか？</h3>
-            <p>月額ではなく、300円の買い切り解除を予定しています。Proでは商品登録数と会計履歴の制限をなくす方針です。</p>
+            <p>月額ではなく、買い切り解除を予定しています。通常1,980円のところ、デビューキャンペーン中は300円で提供予定です。Proでは商品登録数と会計履歴の制限をなくす方針です。</p>
           </article>
           <article class="faq">
             <h3>サーバーやAPI費用はかかりますか？</h3>
