@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>簡単QRレジ | POS不要、スマホだけで完結する小さなお店向け会計レジ</title>
-  <meta name="description" content="簡単QRレジは、POS不要でスマホだけで完結する小さなお店向けQR会計レジアプリです。店員が商品QRを読み取り、お客様は現金、PayPay、クレカなどいつもの方法で支払い。決済連携なし、通信なし、余計な設定なしで会計履歴を残せます。">
+  <meta name="description" content="簡単QRレジは、POS不要でスマホだけで完結する小さなお店向けQR会計レジアプリです。店員が商品QRを読み取り、お客様は現金、PayPay、クレカなどいつもの方法で支払い。Proでは58mm AirPrint対応レシートプリンターで黒単色のレシート印刷もできます。">
   <link rel="canonical" href="https://kantan-qr-regi.bantex.jp/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="簡単QRレジ">
   <meta property="og:title" content="簡単QRレジ | POS不要、スマホだけで完結する小さなお店向け会計レジ">
-  <meta property="og:description" content="POSはもう要らない。店員が商品QRを読み取り、お客様は現金、PayPay、クレカなどで支払い。決済連携なし、通信なしのQR会計レジです。">
+  <meta property="og:description" content="POSはもう要らない。店員が商品QRを読み取り、お客様は現金、PayPay、クレカなどで支払い。Proでは58mm AirPrint対応レシートプリンターで黒単色のレシート印刷もできます。">
   <meta property="og:url" content="https://kantan-qr-regi.bantex.jp/">
   <meta property="og:image" content="https://kantan-qr-regi.bantex.jp/assets/generated/hero-simple-payment-register.jpg">
   <meta name="twitter:card" content="summary_large_image">
@@ -558,6 +558,71 @@
       color: var(--muted);
       font-weight: 700;
     }
+    .receipt-printer {
+      background: #edf7f3;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .printer-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 0.82fr) minmax(360px, 1fr);
+      gap: 34px;
+      align-items: center;
+    }
+    .printer-copy p {
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 17px;
+      font-weight: 700;
+    }
+    .printer-points {
+      display: grid;
+      gap: 10px;
+      margin: 22px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .printer-points li {
+      padding: 12px 14px;
+      border-left: 5px solid var(--green);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--ink);
+      font-weight: 900;
+    }
+    .printer-visuals {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(150px, 0.42fr);
+      gap: 14px;
+      align-items: end;
+    }
+    .printer-scene,
+    .receipt-sample-frame {
+      margin: 0;
+    }
+    .printer-scene img,
+    .receipt-sample-frame img {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+    .printer-scene img {
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+    .receipt-sample-frame img {
+      max-height: 420px;
+      object-fit: contain;
+    }
+    .receipt-sample-frame figcaption {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      text-align: center;
+    }
     .manual-link {
       display: grid;
       grid-template-columns: minmax(0, 0.85fr) minmax(300px, 0.75fr);
@@ -623,9 +688,13 @@
       .section-head,
       .scene-grid,
       .price-layout,
+      .printer-layout,
       .manual-link,
       .final-cta .wrap {
         grid-template-columns: 1fr;
+      }
+      .printer-visuals {
+        grid-template-columns: minmax(0, 1fr) minmax(140px, 0.34fr);
       }
       h1 { font-size: 48px; }
       .hero-copy { padding: 42px 0 72px; }
@@ -652,6 +721,7 @@
       .pain-grid,
       .feature-grid,
       .media-band,
+      .printer-visuals,
       .usecase-card,
       .faq-grid,
       .plan-grid {
@@ -713,6 +783,7 @@
       .status-item { min-height: auto; padding: 16px; }
       .panel, .step, .plan, .manual-link { padding: 18px; }
       .price { font-size: 34px; }
+      .receipt-sample-frame img { max-height: 360px; }
     }
   </style>
   <script type="application/ld+json">
@@ -722,7 +793,7 @@
     "name": "簡単QRレジ",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "iOS",
-    "description": "POS不要でスマホだけで完結する一人店長の小さなお店、屋台、学園祭、マルシェ、個人販売向けのiPhone用QR会計レジアプリ。店員が商品QRを読み取り、お客様は現金、PayPay、クレカなどいつもの方法で支払います。決済連携なし、通信なし、余計な設定なしで会計履歴を残せます。",
+    "description": "POS不要でスマホだけで完結する一人店長の小さなお店、屋台、学園祭、マルシェ、個人販売向けのiPhone用QR会計レジアプリ。店員が商品QRを読み取り、お客様は現金、PayPay、クレカなどいつもの方法で支払います。Proでは58mm AirPrint対応レシートプリンターで黒単色のレシート印刷もできます。",
     "offers": [
       {
         "@type": "Offer",
@@ -734,7 +805,7 @@
         "@type": "Offer",
         "price": "300",
         "priceCurrency": "JPY",
-        "description": "Pro買い切りで制限なし"
+        "description": "Pro買い切りで制限なし、58mmレシート印刷も利用可能"
       }
     ],
     "publisher": {
@@ -913,7 +984,7 @@
         <div>
           <p class="section-label">PRICE</p>
           <h2 id="pricing-title">無料で試して、<span class="keep">Proは300円買い切り。</span></h2>
-          <p>無料版で基本機能を試せます。Proは300円の買い切りで、商品登録数と会計履歴の制限をなくせます。</p>
+          <p>無料版で基本機能を試せます。Proは300円の買い切りで、商品登録数と会計履歴の制限をなくし、レシート印刷も使えます。</p>
           <div class="plan-grid">
             <article class="plan">
               <div class="plan-name">無料版</div>
@@ -922,6 +993,7 @@
                 <li>商品登録5件まで</li>
                 <li>会計履歴10件まで</li>
                 <li>QR読み取りと会計を確認</li>
+                <li>レシート印刷はProで利用</li>
               </ul>
             </article>
             <article class="plan pro">
@@ -930,7 +1002,7 @@
               <ul>
                 <li>商品登録数の制限なし</li>
                 <li>会計履歴の制限なし</li>
-                <li>PDF・CSV・データ移行まで活用</li>
+                <li>58mmレシート印刷も利用可能</li>
               </ul>
             </article>
           </div>
@@ -1007,8 +1079,8 @@
             <p>同じQRを読むたびに数量が増え、カート内で数量変更もできます。会計完了後に履歴へ保存します。</p>
           </article>
           <article class="panel">
-            <h3>レシート保存</h3>
-            <p>会計内容をレシートとして確認し、印刷やPDF保存に使えます。お客様への控えにも便利です。</p>
+            <h3>58mmレシート印刷（Pro）</h3>
+            <p>Proでは会計後にレシートを表示し、58mm AirPrint対応レシートプリンターで黒単色のお客様用レシートを印刷できます。</p>
           </article>
           <article class="panel">
             <h3>売上履歴CSV</h3>
@@ -1022,6 +1094,30 @@
             <h3>外部通信なし</h3>
             <p>ログイン、広告、分析SDK、サーバー保存は使わない方針です。データは端末内に保存されます。</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="receipt-printer" id="receipt-print" aria-labelledby="receipt-print-title">
+      <div class="wrap printer-layout">
+        <div class="printer-copy">
+          <p class="section-label">RECEIPT PRINT</p>
+          <h2 id="receipt-print-title"><span class="keep">Proなら会計後、</span> <span class="keep">その場で</span> <span class="keep">58mmレシート印刷。</span></h2>
+          <p>会計確認画面と会計履歴の個別レシートから、レシートプリンター用の細長いレイアウトで印刷できます。対象は58mm幅のAirPrint対応レシートプリンターです。実際のレシート出力に合わせて、黒単色の印字にしています。</p>
+          <ul class="printer-points">
+            <li>レシートプリンター用に58mm幅でPDFを作成</li>
+            <li>紙送り分の下余白を入れて、切り取りやすく調整</li>
+            <li>レシート印刷はPro機能として提供</li>
+          </ul>
+        </div>
+        <div class="printer-visuals">
+          <figure class="printer-scene">
+            <img src="assets/generated/scene-receipt-printer-handoff.jpg" alt="58mmレシートプリンターで印刷したレシートを小さなお店の店員がお客様に渡す使用イメージ">
+          </figure>
+          <figure class="receipt-sample-frame">
+            <img src="assets/generated/receipt-58mm-sample.png" alt="簡単QRレジの黒単色58mmレシート印刷サンプル">
+            <figcaption>黒単色の58mmレシート印刷サンプル</figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -1068,7 +1164,7 @@
           </article>
           <article class="faq">
             <h3>Proは月額ですか？</h3>
-            <p>月額ではなく、300円の買い切り解除を予定しています。Proでは商品登録数と会計履歴の制限をなくす方針です。</p>
+            <p>月額ではなく、300円の買い切り解除を予定しています。Proでは商品登録数と会計履歴の制限をなくし、58mmレシート印刷も使える方針です。</p>
           </article>
           <article class="faq">
             <h3>サーバーやAPI費用はかかりますか？</h3>
@@ -1081,6 +1177,10 @@
           <article class="faq">
             <h3>会計履歴はExcelで見られますか？</h3>
             <p>CSV出力に対応するため、NumbersやExcelで確認できます。日本語が読める形式で保存する方針です。</p>
+          </article>
+          <article class="faq">
+            <h3>レシートプリンターで印刷できますか？</h3>
+            <p>Pro機能として、58mm幅のAirPrint対応レシートプリンター向けに黒単色のレシート印刷レイアウトを用意しています。AirPrintで選べるプリンターを同じネットワークで使います。</p>
           </article>
         </div>
       </div>
