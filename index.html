@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>簡単QRレジ | iPhoneだけで商品QRを読み取る小さなお店向けレジアプリ</title>
-  <meta name="description" content="簡単QRレジは、一人店長の小さなお店、屋台、学園祭、マルシェ、個人販売向けのiPhone用QR会計レジアプリです。店員が商品QRを読み取り、お客様は現金、PayPay、クレカなどいつもの方法で支払い。決済連携なし、通信なし、余計な設定なしで会計履歴を残せます。">
+  <title>簡単QRレジ | POS不要、スマホだけで完結する小さなお店向け会計レジ</title>
+  <meta name="description" content="簡単QRレジは、POS不要でスマホだけで完結する小さなお店向けQR会計レジアプリです。店員が商品QRを読み取り、お客様は現金、PayPay、クレカなどいつもの方法で支払い。決済連携なし、通信なし、余計な設定なしで会計履歴を残せます。">
   <link rel="canonical" href="https://kantan-qr-regi.bantex.jp/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="簡単QRレジ">
-  <meta property="og:title" content="簡単QRレジ | iPhoneだけで商品QRを読み取る小さなお店向けレジアプリ">
-  <meta property="og:description" content="店員が商品QRを読み取り、お客様は現金、PayPay、クレカなどで支払い。決済連携なし、通信なしの小さなお店向けQR会計レジです。">
+  <meta property="og:title" content="簡単QRレジ | POS不要、スマホだけで完結する小さなお店向け会計レジ">
+  <meta property="og:description" content="POSはもう要らない。店員が商品QRを読み取り、お客様は現金、PayPay、クレカなどで支払い。決済連携なし、通信なしのQR会計レジです。">
   <meta property="og:url" content="https://kantan-qr-regi.bantex.jp/">
   <meta property="og:image" content="https://kantan-qr-regi.bantex.jp/assets/generated/hero-simple-payment-register.jpg">
   <meta name="twitter:card" content="summary_large_image">
@@ -102,7 +102,7 @@
     }
     .hero {
       position: relative;
-      min-height: 560px;
+      min-height: 640px;
       display: grid;
       align-items: start;
       isolation: isolate;
@@ -113,9 +113,12 @@
       content: "";
       position: absolute;
       inset: 0;
-      background:
-        linear-gradient(90deg, rgba(8, 19, 24, 0.76) 0%, rgba(8, 19, 24, 0.56) 38%, rgba(8, 19, 24, 0.18) 68%, rgba(8, 19, 24, 0.05) 100%),
-        url("assets/generated/hero-simple-payment-register.jpg") center / cover no-repeat;
+      background-image:
+        linear-gradient(90deg, rgba(8, 19, 24, 0.9) 0%, rgba(8, 19, 24, 0.78) 36%, rgba(8, 19, 24, 0.42) 58%, rgba(8, 19, 24, 0.08) 82%, rgba(8, 19, 24, 0) 100%),
+        url("assets/generated/hero-simple-payment-register.jpg");
+      background-position: center, right center;
+      background-size: cover, contain;
+      background-repeat: no-repeat;
       z-index: -2;
     }
     .hero::after {
@@ -127,8 +130,8 @@
       z-index: -1;
     }
     .hero-copy {
-      width: min(680px, 100%);
-      padding: 56px 0 76px;
+      width: min(720px, 100%);
+      padding: 68px 0 96px;
       color: #fff;
     }
     .eyebrow {
@@ -145,7 +148,7 @@
     }
     h1 {
       margin-top: 18px;
-      font-size: 64px;
+      font-size: 54px;
       font-weight: 900;
     }
     .hero-lead {
@@ -648,7 +651,7 @@
     "name": "簡単QRレジ",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "iOS",
-    "description": "一人店長の小さなお店、屋台、学園祭、マルシェ、個人販売向けのiPhone用QR会計レジアプリ。店員が商品QRを読み取り、お客様は現金、PayPay、クレカなどいつもの方法で支払います。決済連携なし、通信なし、余計な設定なしで会計履歴を残せます。",
+    "description": "POS不要でスマホだけで完結する一人店長の小さなお店、屋台、学園祭、マルシェ、個人販売向けのiPhone用QR会計レジアプリ。店員が商品QRを読み取り、お客様は現金、PayPay、クレカなどいつもの方法で支払います。決済連携なし、通信なし、余計な設定なしで会計履歴を残せます。",
     "offers": [
       {
         "@type": "Offer",
@@ -691,15 +694,15 @@
     <section class="hero" aria-label="簡単QRレジの紹介">
       <div class="wrap">
         <div class="hero-copy">
-        <span class="eyebrow">店員が商品QRを読む、決済連携なしの会計レジ</span>
-        <h1>簡単QRレジ</h1>
-          <p class="hero-lead">商品QRを作って、店員がiPhoneで読み取り。お客様は現金、PayPay、クレカなどいつもの方法で支払えます。</p>
+        <span class="eyebrow">簡単QRレジ | 決済連携なしの会計レジ</span>
+        <h1>POSはもう要らない。スマホだけで完結の新しい会計レジ！</h1>
+          <p class="hero-lead">商品QRを作って、店員がiPhoneで読み取り。合計金額と会計履歴を、スマホ1台でその場に残せます。</p>
           <p class="hero-note">お客様がQRを読み取る決済アプリではありません。店員側のiPhoneで商品QRを読む、会計記録用のシンプルなレジです。</p>
           <ul class="hero-points" aria-label="主な特徴">
-            <li>店員が商品QRを読む</li>
+            <li>POS不要</li>
+            <li>スマホ1台で完結</li>
             <li>支払いはいつもの方法</li>
             <li>決済連携なし</li>
-            <li>通信・ログイン不要</li>
           </ul>
           <div class="cta-row">
             <a class="button" href="manual/">使い方を見る</a>
@@ -711,10 +714,10 @@
 
     <div class="wrap status-strip" aria-label="簡単QRレジの導入しやすさ">
       <div class="status-grid">
+        <div class="status-item"><strong>POS不要</strong><span>スマホだけで会計履歴まで完結</span></div>
         <div class="status-item"><strong>商品QR</strong><span>お客様ではなく店員が読み取り</span></div>
         <div class="status-item"><strong>支払い自由</strong><span>現金・PayPay・クレカなど</span></div>
         <div class="status-item"><strong>連携なし</strong><span>決済設定や審査連携は不要</span></div>
-        <div class="status-item"><strong>端末内保存</strong><span>通信・ログイン・サーバー運用なし</span></div>
       </div>
     </div>
 
@@ -733,8 +736,8 @@
             <p>販売後に何が売れたかを見返せず、売上集計や確定申告前の整理が重くなりがちです。</p>
           </article>
           <article class="panel">
-            <h3>本格POSは大げさ</h3>
-            <p>一人店長の小さなお店、屋台、学園祭、マルシェでは、スタッフがすぐ覚えられるレジ画面が向いています。</p>
+            <h3>大がかりなレジは要らない</h3>
+            <p>一人店長の小さなお店、屋台、学園祭、マルシェでは、スタッフがすぐ覚えられるスマホ会計が向いています。</p>
           </article>
           <article class="panel">
             <h3>通信環境に左右されたくない</h3>
