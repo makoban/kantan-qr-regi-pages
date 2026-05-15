@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>簡単QRレジ | POS不要、スマホだけで完結する小さなお店向け会計レジ</title>
-  <meta name="description" content="簡単QRレジは、POS不要でスマホだけで完結する小さなお店向けQR会計レジアプリです。店員が商品QRを読み取り、お客様は現金、PayPay、クレカなどいつもの方法で支払い。Proでは58mm AirPrint対応レシートプリンターで黒単色のレシート印刷もできます。">
+  <meta name="description" content="簡単QRレジは、POS不要でスマホだけで完結する小さなお店向けQR会計レジアプリです。店員が商品QRを読み取り、お客様は現金、PayPay、クレカなどいつもの方法で支払い。Proは初期バージョン価格300円買い切りで、58mmレシート印刷もできます。">
   <link rel="canonical" href="https://kantan-qr-regi.bantex.jp/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="簡単QRレジ">
   <meta property="og:title" content="簡単QRレジ | POS不要、スマホだけで完結する小さなお店向け会計レジ">
-  <meta property="og:description" content="POSはもう要らない。店員が商品QRを読み取り、お客様は現金、PayPay、クレカなどで支払い。Proでは58mm AirPrint対応レシートプリンターで黒単色のレシート印刷もできます。">
+  <meta property="og:description" content="POSはもう要らない。店員が商品QRを読み取り、お客様は現金、PayPay、クレカなどで支払い。Proは初期バージョン価格300円買い切りです。">
   <meta property="og:url" content="https://kantan-qr-regi.bantex.jp/">
   <meta property="og:image" content="https://kantan-qr-regi.bantex.jp/assets/generated/hero-simple-payment-register.jpg">
   <meta name="twitter:card" content="summary_large_image">
@@ -456,6 +456,30 @@
       border-color: var(--yellow);
       box-shadow: 0 18px 40px rgba(245, 191, 47, 0.22);
     }
+    .price-callout {
+      margin: 20px 0 18px;
+      padding: 16px 18px;
+      border: 2px solid #f3c343;
+      border-radius: 8px;
+      background: #fff8dc;
+      color: var(--ink);
+    }
+    .price-callout strong {
+      display: block;
+      font-size: 24px;
+      line-height: 1.35;
+      font-weight: 900;
+      text-wrap: balance;
+    }
+    .price-callout span {
+      display: block;
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 1.65;
+      text-wrap: pretty;
+    }
     .plan-name {
       color: var(--green);
       font-size: 14px;
@@ -793,7 +817,7 @@
     "name": "簡単QRレジ",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "iOS",
-    "description": "POS不要でスマホだけで完結する一人店長の小さなお店、屋台、学園祭、マルシェ、個人販売向けのiPhone用QR会計レジアプリ。店員が商品QRを読み取り、お客様は現金、PayPay、クレカなどいつもの方法で支払います。Proでは58mm AirPrint対応レシートプリンターで黒単色のレシート印刷もできます。",
+    "description": "POS不要でスマホだけで完結する一人店長の小さなお店、屋台、学園祭、マルシェ、個人販売向けのiPhone用QR会計レジアプリ。店員が商品QRを読み取り、お客様は現金、PayPay、クレカなどいつもの方法で支払います。Proは初期バージョン価格300円買い切りで、58mm AirPrint対応レシートプリンターで黒単色のレシート印刷もできます。",
     "offers": [
       {
         "@type": "Offer",
@@ -805,7 +829,7 @@
         "@type": "Offer",
         "price": "300",
         "priceCurrency": "JPY",
-        "description": "Pro買い切りで制限なし、58mmレシート印刷も利用可能"
+        "description": "初期バージョン価格300円買い切りで制限なし、58mmレシート印刷も利用可能"
       }
     ],
     "publisher": {
@@ -985,6 +1009,10 @@
           <p class="section-label">PRICE</p>
           <h2 id="pricing-title">無料で試して、<span class="keep">Proは300円買い切り。</span></h2>
           <p>無料版で基本機能を試せます。Proは300円の買い切りで、商品登録数と会計履歴の制限をなくし、レシート印刷も使えます。</p>
+          <p class="price-callout">
+            <strong>たった300円買い切りでここまで！？</strong>
+            <span>初期バージョン価格は期間限定です。スマホだけのQR会計、売上履歴、CSV出力、58mmレシート印刷までまとめて使いたい方はお早めに。</span>
+          </p>
           <div class="plan-grid">
             <article class="plan">
               <div class="plan-name">無料版</div>
@@ -1006,7 +1034,7 @@
               </ul>
             </article>
           </div>
-          <p class="plan-note">App Store公開前のため、表示価格は申請時の価格ポイントに合わせて最終確認します。</p>
+          <p class="plan-note">初期バージョンの300円買い切り価格は期間限定です。公開時の表示価格はApp Storeの価格ポイントに合わせて最終確認します。</p>
         </div>
         <figure class="lettering">
           <img src="assets/generated/lettering-pro-300.jpg" alt="スマホだけでQRレジ。Pro 300円買い切り">
@@ -1190,7 +1218,7 @@
       <div class="wrap">
         <div>
           <h2>小さな販売現場に、ちょうどいいQRレジを。</h2>
-          <p>商品QRを読み取るだけのシンプルな会計から、履歴保存とCSV管理まで。まずは使い方を確認してください。</p>
+          <p>商品QRを読み取るだけのシンプルな会計から、履歴保存、CSV管理、Proのレシート印刷まで。初期バージョン価格は期間限定です。</p>
         </div>
         <a class="button" href="manual/">マニュアルを見る</a>
       </div>
