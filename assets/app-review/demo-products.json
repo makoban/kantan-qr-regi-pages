@@ -1,0 +1,17 @@
+{
+  "customTaxRate": 8,
+  "defaultTaxRate": 10,
+  "exportedAt": "2026-05-16T06:40:00Z",
+  "products": [
+    {
+      "createdAt": "2026-05-16T06:40:00Z",
+      "id": "11111111-2222-3333-4444-555555555555",
+      "isActive": true,
+      "name": "Demo Cookie",
+      "priceExcludingTax": 200,
+      "taxRate": -1
+    }
+  ],
+  "storeName": "Review Demo Store",
+  "version": 1
+}

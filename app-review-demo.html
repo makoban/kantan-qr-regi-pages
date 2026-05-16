@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kantan QR Regi App Review Demo QR</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      color: #142225;
+      background: #f4fbf8;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(28px, 6vw, 44px);
+      line-height: 1.15;
+    }
+    .panel {
+      margin-top: 18px;
+      padding: 18px;
+      border: 1px solid #cfe2db;
+      border-radius: 8px;
+      background: #fff;
+    }
+    img {
+      display: block;
+      width: min(100%, 420px);
+      height: auto;
+      margin: 18px auto;
+      border: 12px solid #fff;
+      box-shadow: 0 12px 28px rgba(13, 90, 76, 0.15);
+    }
+    a {
+      color: #007a68;
+      font-weight: 700;
+    }
+    code {
+      overflow-wrap: anywhere;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Kantan QR Regi Demo QR</h1>
+    <p>This page is for App Review. It provides a sample product data file and the matching QR code for testing the QR scanning flow.</p>
+
+    <section class="panel">
+      <h2>Test steps</h2>
+      <ol>
+        <li>Download the sample product data JSON below to the review device.</li>
+        <li>Open the app, then go to Settings &gt; Import product data.</li>
+        <li>Select the JSON file. The product "Demo Cookie" will be added.</li>
+        <li>Display the QR code on another screen, then scan it from the register screen in the app.</li>
+        <li>The app adds Demo Cookie to the cart. Complete checkout to review the receipt and sales history.</li>
+      </ol>
+      <p><a href="assets/app-review/demo-products.json" download>Download sample product data JSON</a></p>
+    </section>
+
+    <section class="panel">
+      <h2>Demo QR code</h2>
+      <img src="assets/app-review/demo-product-qr.png" alt="Demo QR code for Demo Cookie">
+      <p>QR payload:</p>
+      <code>kantanqrregi://product/11111111-2222-3333-4444-555555555555</code>
+    </section>
+  </main>
+</body>
+</html>
